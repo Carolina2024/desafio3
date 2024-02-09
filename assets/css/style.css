@@ -1,0 +1,166 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+/* url de fonts.google primero se selecciona y se copia link */
+
+* {
+  padding: 0;/* relleno */
+  margin: 0;/* margen */
+  box-sizing: border-box;/* tamaño de caja se incluye padding y border */
+}
+
+/* ESTILO DEL HEADER */
+header {/* estilo para el header */
+  height: 70px;/* alto */
+  background-color: #000000;/* color de fondo */
+}
+
+header h1 {/* estilo h1 del header */
+  text-align: center;/* alineacion del texto */
+  color: #FFFFFF;/* color de la letra */
+  font-style: normal;/* aspecto familia, estilo de fuente */
+  font-variant: normal;/* la variante al mostrar tipo de letra */
+  font-weight:medium;/* destacar palabra */
+  font-size: 50px;/* tamaño de la letra */
+  line-height: 59px;/* espacio vertical entre lineas de texto */
+  font-family: 'Raleway', sans-serif;/* se copia de fonts google  */
+  letter-spacing: 0px;/* espacio entre las letras texto */
+  padding: 7px;/* relleno */
+}
+
+/* ESTILO DE IMAGEN PRINCIPAL*/
+.hero-section{/* estilo clase hero-section*/
+  width: 100%;/* ancho */
+  height: 850px;/* alto */
+  background-image: url('../img/bg-header.jpg');/*imagen de fondo*/
+  background-position: center;/*se posiciona al centro*/
+  background-repeat: no-repeat;/* imagen de fondo no se repite */
+  background-size: cover;/*la imagen se auto ajusta al espacio*/
+}
+
+/* ESTILO PARRAFO E IMAGEN */
+.txtimg {/* estilo para clase txtimg */
+  background-color: #000000;/* color de fondo */
+}
+
+.contenido{/* estilo para clase contenido */
+  height: 400px;/* alto */
+  display: flex;/* diseño flexible */
+  flex-wrap: wrap;/* adaptable al diseño, al espacio */
+  justify-content: center;/* alinear contenido al centro */
+  align-items: center;/* alineacion items arriba y abajo  */
+  gap:170px;/* separacion elementos */
+  padding-top: 20px;/* relleno arriba */
+}
+
+.contenido p{/* estilo para parrafo de clase contenido */
+  width: 480px;/* ancho */
+  font-style: normal;/* aspecto familia, estilo de fuente */
+  font-variant: normal;/* la variante al mostrar tipo de letra */
+  font-weight: 300;/* destacar palabra */
+  font-size: 16px;/* tamaño de letra */
+  line-height: 19px;/* espacio vertical entre lineas de texto */
+  font-family: 'Raleway', sans-serif;/* se copia de fonts google  */
+  letter-spacing: 0px;/* espacio entre las letras texto */
+  color: #FFFFFF;/* color de la letra */
+  text-align: left;/* alineacion del parrafo */
+}
+
+.contenido img{/* estilo para img de clase contenido */
+  width: 430px;/* ancho de la imagen */
+  height: 250px;/* alto de la imagen */
+}
+
+
+/* ESTILO SECCIÓN CARACTERISTICAS */
+.caracteristicas{/* estilo para clase caracteristicas */
+  height: 300px;/* alto */
+  background-color:#1E1A13 ;/* color de fondo */
+}
+
+.caracteristicas h2{/* estilo para h2 de clase caracteristicas */
+  text-align: center;/* alineacion del texto */
+  font-style: normal;/* aspecto familia, estilo de fuente */
+  font-variant: normal;/* la variante al mostrar tipo de letra */
+  font-weight: medium;/* destacar palabra */
+  font-size: 40px;/* tamaño de la letra */
+  line-height: 47px;/* espacio vertical entre lineas de texto */
+  font-family: 'Raleway', sans-serif;/* se copia de fonts google  */
+  letter-spacing: 0px;/* espacio entre las letras texto */
+  color:#FFFFFF ;/* color de la letra */
+  padding: 50px;/* relleno */
+}
+
+.boxes{/* contenedor padre, aca va el flex */
+  height: 35px;/* alto */
+  display: flex;/* diseño flexible */
+  flex-wrap: wrap;/* adaptable al diseño */
+  justify-content: center;/* propiedad justify-content para alinear el contenido */
+  gap: 100px;/* separacion elementos */
+  align-items: center;/* alineacion items */
+}
+
+.boxes .box{/* hijo */
+  color: #FFFFFF;/* color elementos */
+  text-align: center;/* alineacion del texto */
+}
+
+.box p{/* estilo parrafo de clase box */
+  font-style: normal;/* aspecto familia, estilo de fuente */
+  font-variant: normal;/* la variante al mostrar tipo de letra */
+  font-weight: 300;/* destacar palabra */
+  font-size: 20px;/* tamaño de la letra */
+  line-height: 29px;/* espacio vertical entre lineas de texto */
+  font-family: 'Raleway', sans-serif;/* se copia de fonts google  */
+  letter-spacing: 0px;/* espacio entre las letras texto */
+  padding: 5px;/* relleno */
+  text-align: left;/* alineacion del texto */
+}
+
+.box i{/* estilo icono de clase box */
+  padding: 5px;/* relleno */
+}
+
+
+/* ESTILO GALERIA DE IMAGENES */
+.imagenes{/* estilo para clase imagenes */
+  height: 370px;/* alto */
+  background-color: #000000;/* color de fondo */
+}
+
+.galeria {/* estilo para clase galeria, contenedor padre */
+  height: 380px;/* alto */
+  display: flex;/* diseño flexible */
+  flex-wrap: wrap;/* ajuste de los elementos */
+  justify-content: center;/* propiedad alinear contenido dentro de contenedor flex */
+  align-items: center;/* alineacion de items */
+  gap: 12px;/* para separar los elementos */
+}
+
+.galeria img {/* estilo para img de la galeria */
+  width: 350px;/* ancho imagen */
+  height: 240px;/* alto imagen */
+}
+
+
+/* ESTILO PARA EL FOOTER */
+footer{/* estilo para el footer */
+  height: 80px;/* alto */
+  background-color: #1E1A13;/* color de fondo */
+  color: #FFFFFF;/* color letra */
+  padding: 30px;/* relleno */
+}
+
+footer p{/* estilo para el parrafo del footer */
+  text-align: center;/* alineacion del parrafo */
+  font-style: normal;/* aspecto familia, estilo de fuente */
+  font-variant: normal;/* la variante al mostrar tipo de letra */
+  font-weight: 300;/* destacar palabra */
+  font-size: 20px;/* tamaño de la letra */
+  line-height: 24px;/* espacio vertical entre lineas de texto */
+  font-family: 'Raleway', sans-serif;/* se copia de fonts google  */
+  letter-spacing: 0px;/* espacio letra */
+}
+
+footer a{/* estilo para el a del footer */
+  text-decoration: none;/* se elimina raya abajo */
+  color: #FFFFFF;/* color letra */
+}
